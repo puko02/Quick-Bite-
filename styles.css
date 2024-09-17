@@ -8,13 +8,13 @@
 }
 
 body {
-    width: 1440px
+    width: flex;
 }
 
 .flex-box {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 /* navbar */
@@ -37,6 +37,7 @@ body {
     border-radius: 25px;
     padding: 0 10px;
     background: var(--first-color);
+    font-family:'Gill Sans MT';
 }
 
 .nav-input_after {
@@ -45,6 +46,11 @@ body {
     position: absolute;
     right: 15px;
     top: calc(50% - 12px);
+}
+@media screen and (max-width: 800px){
+    .nav, .nav-input, .nav-input_after, .nav-balance, .nav-balance_cart, .nav-balance_info, .nav-filter, .nav-seller {
+        width: 100%;
+    }
 }
 
 /*.input::before {
