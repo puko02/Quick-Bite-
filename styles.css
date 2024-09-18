@@ -8,7 +8,7 @@
 }
 
 body {
-    width: flex;
+    width: 1440px;
 }
 
 .flex-box {
@@ -18,7 +18,7 @@ body {
 }
 
 /* navbar */
-.nav {
+.nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body {
     font-size: 24px;
     border: none;
     border-radius: 25px;
-    padding: 0 10px;
+    padding: 0 0 0 20px;
     background: var(--first-color);
     font-family:'Gill Sans MT';
 }
@@ -72,7 +72,6 @@ body {
     border: none;
     background: var(--first-color);
     border-radius: 7px;
-
 }
 
 .nav-seller {
@@ -88,7 +87,7 @@ body {
     align-items: center;
 }
 
-.nav-balance_cart {
+.nav-balance_cart{
     width: 32px;
     height: 32px;
     margin-right: 10px;
