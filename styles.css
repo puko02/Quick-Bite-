@@ -7,9 +7,11 @@
     padding: 0;
 }
 
-body {
-    width: 1440px;
+body{
+    background: #FFEFDA
 }
+
+
 
 .flex-box {
     display: flex;
@@ -25,6 +27,7 @@ body {
     padding: 8px 20px;
     border-bottom: 1px solid black;
     box-shadow: 0 0 5px black;
+    background: #fff;
 }
 
 
@@ -35,6 +38,7 @@ body {
     font-size: 24px;
     border: none;
     border-radius: 25px;
+    margin-right: 10px;
     padding: 0 0 0 20px;
     background: var(--first-color);
     font-family:'Gill Sans MT';
@@ -44,15 +48,9 @@ body {
     width: 24px;
     height: 24px;
     position: absolute;
-    right: 15px;
+    right: 25px;
     top: calc(50% - 12px);
 }
-@media screen and (max-width: 800px){
-    .nav, .nav-input, .nav-input_after, .nav-balance, .nav-balance_cart, .nav-balance_info, .nav-filter, .nav-seller {
-        width: 100%;
-    }
-}
-
 /*.input::before {
     content: url("assets/icons/search.svg");
     display: inline-block;
@@ -101,3 +99,66 @@ body {
 .nav-balance_info-items {
     color: #BFBFBF;
 }
+/*main*/
+
+.main{
+    padding: 1.5rem
+}
+
+/*main first section*/
+.main-firstSection{
+background: #FFDBA3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px gray;
+    margin-bottom: 2rem;
+}
+
+
+.main-firstSection > :nth-child(n){
+    position: relative;
+}
+.main-firstSection > :nth-child(n) > * {
+    box-shadow: 0 0 6px 5px rgba(0, 0, 0, .6);
+    border-radius: 30px;
+    width: 7.5rem;
+    height: 7.5rem;
+
+}
+.main-firstSection > * > .onHover {
+    visibility: hidden;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.main-firstSection > *:hover > .onHover {
+    visibility: visible;
+    display: flex;
+}
+
+
+
+/*main second section*/
+
+.main-secondSection h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
