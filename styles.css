@@ -84,6 +84,10 @@ body{
     display: flex;
     align-items: center;
 }
+#fuckingCart{
+    background-color: inherit;
+    border: inherit;
+}
 
 .nav-balance_cart{
     width: 32px;
