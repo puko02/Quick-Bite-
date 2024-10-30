@@ -106,7 +106,7 @@ body{
 /*main*/
 
 .main{
-    padding: 1.5rem
+    padding: 1.5rem 0;
 }
 
 /*main first section*/
@@ -118,7 +118,9 @@ body{
     padding: 1.5rem;
     border-radius: 30px;
     box-shadow: 0 5px 3px -3px gray;
+    margin: auto;
     margin-bottom: 2rem;
+    width: 77rem;
 }
 
 
@@ -130,7 +132,6 @@ body{
     border-radius: 30px;
     width: 7.5rem;
     height: 7.5rem;
-
 }
 /*.main-firstSection > * > .onHover {
     visibility: hidden;
@@ -181,6 +182,8 @@ body{
     background: #FFDBA3;
     padding-top: 1.5rem;
     box-shadow: 0 5px 3px -3px gray;
+    width: 80rem;
+    margin: auto;
     margin-bottom: 5rem;
 
 }
@@ -203,13 +206,19 @@ body{
 /*main third section*/
 .main-thirdSection{
     display: grid;
-    gap: 5rem;
+    gap: 3rem;
     grid-template-columns: 1fr 1fr;
+    margin: auto;
+    max-width: 67rem;
+    margin-bottom: 5rem;
 }
 .main-thirdSection article{
 border-radius: 30px;
     background: #FFDBA3;
+    box-shadow: 0 5px 3px -3px gray;
     padding: 1rem;
+    width: 30rem;
+
 }
 .main-thirdSection_name{
     display: flex;
@@ -226,6 +235,8 @@ border-radius: 30px;
 }
 .main-thirdSection_content img {
     width: 10rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
 
 }
 .main-thirdSection_content div{
@@ -241,11 +252,124 @@ border-radius: 30px;
     align-items: center;
 }
 .main-thirdSection_content div .main-thirdSection_content-text span:first-child{
-    margin-right: .3rem;
+    margin-right: .5rem;
 }
 .main-thirdSection_content div .main-thirdSection_content-text span:last-child{
     font-weight: 100;
 }
+
+/*main fourth section*/
+.main-fourthSection{
+    width: 80rem;
+    margin: auto;
+}
+.main-fourthSection article:first-child{
+    border-radius: 30px;
+    background: #FFDBA3;
+    padding: 1rem 2rem 1.5rem 2rem;
+    box-shadow: 0 5px 3px -3px gray;
+    margin-bottom: 1rem;
+
+}
+.main-fourthSection article:first-child img{
+    width: 100%;
+    height: 7rem;
+    box-shadow: 0 5px 10px -5px black;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+}
+.main-fourthSection article:first-child h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+}
+.main-fourthSection_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.main-fourthSection_info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-fourthSection_info div p:first-child{
+    font-size: 2rem;
+}
+.main-fourthSection_info div p:last-child{
+    font-weight: 100;
+}
+.main-fourthSection article:last-child{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.main-fourthSection article:last-child h3 {
+    border-radius: 30px;
+    background: #FFDBA3;
+    text-align: center;
+    width: 10rem;
+    box-shadow: 0 5px 3px -3px gray;
+    height: 2rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.main-fourthSection article:last-child ul{
+    list-style: none;
+
+}
+.main-fourthSection article:last-child li{
+    margin-bottom: 1rem;
+    width: 35rem;
+    height: 7rem;
+    border-radius: 30px;
+    background: #FFDBA3;
+}
+.main-fourthSection article:last-child ul li:last-child{
+    margin-bottom: 0;
+}
+.main-fourthSection article:last-child li a{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    height: 6rem;
+}
+
+
+
+.main-fourthSection article:last-child img{
+    width: 4.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    margin-right: 1rem
+}
+.main-fourthSection_listDescription{
+    display: flex;
+    flex-direction: column;
+    height: 3.5rem;
+    justify-content: space-between;
+}
+.main-fourthSection_listDescription div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-fourthSection_listDescription h4{
+    font-size: 1.7rem;
+}
+.main-fourthSection_listDescription p{
+    font-weight: lighter;
+}
+
+
 
 
 
