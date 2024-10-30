@@ -107,13 +107,13 @@ body{
 
 /*main first section*/
 .main-firstSection{
-background: #FFDBA3;
+    background: #FFDBA3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem;
-    border-radius: 50px;
-    box-shadow: 0 4px 4px gray;
+    border-radius: 30px;
+    box-shadow: 0 5px 3px -3px gray;
     margin-bottom: 2rem;
 }
 
@@ -122,41 +122,131 @@ background: #FFDBA3;
     position: relative;
 }
 .main-firstSection > :nth-child(n) > * {
-    box-shadow: 0 0 6px 5px rgba(0, 0, 0, .6);
+    box-shadow: 0 0 10px black;
     border-radius: 30px;
     width: 7.5rem;
     height: 7.5rem;
 
 }
-.main-firstSection > * > .onHover {
+/*.main-firstSection > * > .onHover {
     visibility: hidden;
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 0;
-    bottom: 0;
+    top: 7.5rem;
+    bottom: -2rem;
+    height: 2rem;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    border-radius: 0;
 }
 
 .main-firstSection > *:hover > .onHover {
     visibility: visible;
     display: flex;
-}
+}*/
 
+
+@keyframes increase {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.demoHover:hover{
+    animation: ease-in-out increase .2s forwards;
+}
 
 
 /*main second section*/
 
-.main-secondSection h2{
+.main-secondSection_h2{
     text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
     font-weight: lighter;
     margin-bottom: 2rem;
 }
+.main-secondSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 30px;
+    background: #FFDBA3;
+    padding-top: 1.5rem;
+    box-shadow: 0 5px 3px -3px gray;
+    margin-bottom: 5rem;
+
+}
+.main-secondSection article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-secondSection article a img{
+    border-radius: 30px;
+    width: 15rem;
+    box-shadow: 0 0 10px black;
+}
+.main-secondSection article span{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: .5rem 0;
+}
+
+/*main third section*/
+.main-thirdSection{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.main-thirdSection article{
+border-radius: 30px;
+    background: #FFDBA3;
+    padding: 1rem;
+}
+.main-thirdSection_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.main-thirdSection_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-thirdSection_name svg{
+    margin-right: .5rem;
+}
+.main-thirdSection_content img {
+    width: 10rem;
+
+}
+.main-thirdSection_content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-thirdSection_content div .main-thirdSection_content-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-thirdSection_content div .main-thirdSection_content-text span:first-child{
+    margin-right: .3rem;
+}
+.main-thirdSection_content div .main-thirdSection_content-text span:last-child{
+    font-weight: 100;
+}
+
+
+
+
+
 
 
 
