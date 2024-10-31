@@ -60,14 +60,6 @@ body{
     border-radius: 7px;
 }
 
-.nav-seller {
-    padding: 0 12px;
-    height: 3rem;
-    border: none;
-    color: #FEB757;
-    border-radius: 7px;
-}
-
 .nav-balance {
     display: flex;
     align-items: center;

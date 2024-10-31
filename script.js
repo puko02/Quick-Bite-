@@ -62,3 +62,4 @@ function searchItems(query) {
         resultsContainer.appendChild(itemElement);
     });
 }
+
