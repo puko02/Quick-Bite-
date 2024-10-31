@@ -44,7 +44,11 @@ const items = [
     { id: 15, name: 'Sub de Almôndegas', description: 'Almôndegas com molho marinara', image: 'assets/images/sub_almondegas.jpg' },
     { id: 16, name: 'Tacos de Carne', description: 'Tacos de carne moída com alface e queijo', image: 'assets/images/tacos_carne.jpg' },
     { id: 17, name: 'Tacos de Frango', description: 'Tacos de frango com salsa e queijo', image: 'assets/images/tacos_frango.jpg' },
-    { id: 18, name: '345739 366', description: 'Easter Egg', image: 'assets/images/demoImg.jpeg' },
+    { id: 18, name: 'Pizza grande', description: 'massa de pizza, molho de tomate, queijo mussarela, 12 pedaços', image: 'assets/images/pizza_pepperoni.jpg' },
+    { id: 19, name: 'Pizza media', description: 'massa de pizza, molho de tomate, queijo mussarela, 10 pedaços', image: 'assets/images/pizza_margherita.jpg' },
+    { id: 20, name: 'X-Salada', description: 'pão brioche, carne bovina, alface, tomate, queijo, cebola, picles', image: 'assets/images/hamburguer_vegetariano.jpg' },
+    { id: 21, name: 'X-Egg', description: 'pão brioche, carne bovina, alface, tomate, queijo, cebola, picles, ovo', image: 'assets/images/cheeseburger.jpg' },
+    { id: 0, name: '345739 366', description: 'Easter Egg', image: 'assets/images/demoImg.jpeg' },
 
 ];
 
