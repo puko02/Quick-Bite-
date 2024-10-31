@@ -48,6 +48,7 @@ const items = [
     { id: 19, name: 'Pizza media', description: 'massa de pizza, molho de tomate, queijo mussarela, 10 pedaços', image: 'assets/images/pizza_margherita.jpg' },
     { id: 20, name: 'X-Salada', description: 'pão brioche, carne bovina, alface, tomate, queijo, cebola, picles', image: 'assets/images/hamburguer_vegetariano.jpg' },
     { id: 21, name: 'X-Egg', description: 'pão brioche, carne bovina, alface, tomate, queijo, cebola, picles, ovo', image: 'assets/images/cheeseburger.jpg' },
+    { id: 22, name: 'X-Bacon', description: 'pão brioche, carne bovina, alface, tomate, queijo, cebola, picles, ovo, bacon', image: 'assets/images/sanduiche_blt.jpg' },
     { id: 0, name: '345739 366', description: 'Easter Egg', image: 'assets/images/demoImg.jpeg' },
 
 ];
