@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="./assets/icons/icon.png">
+    <title>Quick Bite</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div style="width: 675px; margin-right: 10px;" class="flex-box">
+            <div style="position: relative">
+                <form id="search-form" action="pesquisa.html" method="GET">
+                    <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input" required>
+                    <img src="assets/icons/search.svg" class="nav-input_after" alt="search" onclick="document.getElementById('search-form').submit()">
+                </form>
+            </div>
+            <button class="nav-filter"><img src="assets/icons/filter.svg" alt="filter"></button>
+        </div>
+        <div>
+            <a href="restaurantes.html" id="Restaurantes">Restaurantes</a>
+        </div>
+        <div style="width: 540px" class="flex-box">
+            <div class="nav-balance">
+               <a href="carrinho.html" id="carrinho">
+                <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
+                <ul class="nav-balance_info">
+                    <li class="nav-balance_info-money">R$ 0,00</li>
+                    <li class="nav-balance_info-items">0 itens</li>
+                </ul>
+            </a>
+            </div>
+            <div class="logo">
+            <a href="principal.html">
+                <img  src="assets/images/logo.png" width="220" height="55" alt="logo">
+            </a>
+            </div>
+        </div>
+    </nav>
+    <main class="main">
+
+<section class="main-fourthSection">
+    <article>
+        <img src="assets/images-principal/banner-pizzaria.jpg" alt>
+        <div class="main-fourthSection_info">
+            <h2>
+                toninho tornado lanches
+            </h2>
+            <div>
+
+                <p>
+                    Centro, Avenida Tornado, 1441
+                </p>
+                <p>
+                    Atendimento das 14h ate as 21h
+                </p>
+            </div>
+        </div>
+    </article>
+    <article>
+
+        <div>
+            <h3>
+                Pizzas
+            </h3>
+
+            <ul>
+                <li>
+                    <a href="detalhes.html?id=18">
+                        <img src="assets/images/pizza_pepperoni.jpg" alt>
+                        <div class="main-fourthSection_listDescription">
+                            <div>
+                                <h4>
+                                    Pizza grande
+                                </h4>
+                                <span>
+                                    R$69,99
+                                </span>
+                            </div>
+                            <p>
+                                massa de pizza, molho de tomate, queijo mussarela, 12 pedaços
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="detalhes.html?id=19">
+                        <img src="assets/images/pizza_margherita.jpg" alt>
+                        <div class="main-fourthSection_listDescription">
+                            <div>
+                                <h4>
+                                    Pizza media
+                                </h4>
+                                <span>
+                                    R$49,99
+                                </span>
+                            </div>
+                            <p>
+                                massa de pizza, molho de tomate, queijo mussarela, 10 pedaços
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div>
+            <h3>
+                Lanches
+            </h3>
+
+            <ul>
+                <li>
+                    <a href="detalhes.html?id=22">
+                        <img src="assets/images/sanduiche_blt.jpg" alt>
+                        <div class="main-fourthSection_listDescription">
+                            <div>
+                                <h4>
+                                    X-Bacon
+                                </h4>
+                                <span>
+                                    R$18,99
+                                </span>
+                            </div>
+                            <p>
+                                pão brioche, carne bovina, alface, tomate, queijo, cebola, picles
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="detalhes.html?id=21">
+                        <img src="assets/images/cheeseburger.jpg" alt>
+                        <div class="main-fourthSection_listDescription">
+                            <div>
+                                <h4>
+                                    X-Egg
+                                </h4>
+                                <span id="rebelde">
+                                    R$16,99
+                                </span>
+                            </div>
+                            <p>
+                                pão brioche, carne bovina, alface, tomate, queijo, cebola, picles, ovo
+                            </p>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>
+
+</main>
+
+<script src="./script.js"></script>
+</body>
+
+</html>
