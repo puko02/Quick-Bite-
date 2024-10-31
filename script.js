@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get('query');
+    const productId = urlParams.get('id'); // Ajuste para obter o ID do produto
+
     if (query) {
         const searchInput = document.getElementById('search-input');
         if (searchInput) {
@@ -8,43 +10,33 @@ document.addEventListener('DOMContentLoaded', () => {
             searchItems(query);
         }
     }
+
+    if (productId) {
+        const product = items.find(item => item.id == productId);
+        if (product) {
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-description').textContent = product.description;
+
+            document.getElementById('add-to-cart').addEventListener('click', () => {
+                addToCart(product);
+            });
+        }
+    }
 });
 
 const items = [
-    { name: 'Cheeseburger', description: 'Hambúrguer suculento com queijo', image: 'assets/images/cheeseburger.jpg' },
-    { name: 'Hambúrguer Vegetariano', description: 'Delicioso hambúrguer vegetariano', image: 'assets/images/hamburguer_vegetariano.jpg' },
-    { name: 'Philly Cheesesteak', description: 'Bife com queijo e cebolas', image: 'assets/images/philly_cheesesteak.jpg' },
-    { name: 'Pizza Margherita', description: 'Pizza clássica com tomates e mussarela', image: 'assets/images/pizza_margherita.jpg' },
-    { name: 'Pizza Pepperoni', description: 'Pepperoni picante com queijo', image: 'assets/images/pizza_pepperoni.jpg' },
-    { name: 'Pizza Vegetariana', description: 'Carregada com vegetais', image: 'assets/images/pizza_vegetariana.jpg' },
-    { name: 'Presunto e Queijo', description: 'Presunto e queijo na baguete', image: 'assets/images/presunto_queijo.jpg' },
-    { name: 'Queijo Grelhado', description: 'Queijo derretido no pão torrado', image: 'assets/images/queijo_grelhado.jpg' },
-    { name: 'Sanduíche BLT', description: 'Bacon, alface e tomate', image: 'assets/images/sanduiche_blt.jpg' },
-    { name: 'Sanduíche Club', description: 'Sanduíche triplo com peru, bacon e alface', image: 'assets/images/sanduiche_club.jpg' },
-    { name: 'Sanduíche de Carne de Porco Desfiada', description: 'Sanduíche de carne de porco desfiada com molho BBQ', image: 'assets/images/sanduiche_carne_porco_desfiada.jpg' },
-    { name: 'Sanduíche de Frango', description: 'Sanduíche de frango grelhado com alface e tomate', image: 'assets/images/sanduiche_frango.jpg' },
-    { name: 'Sanduíche de Peru', description: 'Sanduíche de peru com molho de cranberry', image: 'assets/images/sanduiche_peru.jpg' },
-    { name: 'Sanduíche de Salada de Atum', description: 'Sanduíche de salada de atum com alface', image: 'assets/images/sanduiche_salada_atum.jpg' },
-    { name: 'Sub de Almôndegas', description: 'Almôndegas com molho marinara', image: 'assets/images/sub_almondegas.jpg' },
-    { name: 'Tacos de Carne', description: 'Tacos de carne moída com alface e queijo', image: 'assets/images/tacos_carne.jpg' },
-    { name: 'Tacos de Frango', description: 'Tacos de frango com salsa e queijo', image: 'assets/images/tacos_frango.jpg' },
-   
+    { id: 1, name: 'Pizza Margherita', description: 'Pizza clássica com tomates e mussarela', image: 'assets/images/pizza_margherita.jpg' },
+    { id: 2, name: 'Pizza Pepperoni', description: 'Pepperoni picante com queijo', image: 'assets/images/pizza_pepperoni.jpg' },
+    { id: 3, name: 'Pizza Vegetariana', description: 'Carregada com vegetais', image: 'assets/images/pizza_vegetariana.jpg' },
+    // Adicione mais itens conforme necessário
 ];
-
-function normalizeString(str) {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-}
 
 function searchItems(query) {
     const resultsContainer = document.getElementById('results-container');
     resultsContainer.innerHTML = '';
 
-    const normalizedQuery = normalizeString(query);
-
-    const filteredItems = items.filter(item => 
-        normalizeString(item.name).includes(normalizedQuery) || 
-        normalizeString(item.description).includes(normalizedQuery)
-    );
+    const filteredItems = items.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
 
     if (filteredItems.length === 0) {
         resultsContainer.innerHTML = '<p>No results found</p>';
@@ -59,7 +51,16 @@ function searchItems(query) {
             <h3>${item.name}</h3>
             <p>${item.description}</p>
         `;
+        itemElement.addEventListener('click', () => {
+            window.location.href = `detalhes.html?id=${item.id}`;
+        });
         resultsContainer.appendChild(itemElement);
     });
 }
 
+function addToCart(product) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert('Produto adicionado ao carrinho!');
+}

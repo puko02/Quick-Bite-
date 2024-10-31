@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="png" href="./assets/icons/icon.png">
-    <title>Quick Bite</title>
+    <title>Carrinho de Compras</title>
 </head>
 
 <body>
@@ -14,7 +14,7 @@
         <div style="width: 675px; margin-right: 10px;" class="flex-box">
             <div style="position: relative">
                 <form id="search-form" action="pesquisa.html" method="GET">
-                    <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input" required>
+                    <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input">
                     <img src="assets/icons/search.svg" class="nav-input_after" alt="search" onclick="document.getElementById('search-form').submit()">
                 </form>
             </div>
@@ -22,11 +22,10 @@
         </div>
         <div style="width: 540px" class="flex-box">
             <div class="nav-balance">
-                <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
-                <ul class="nav-balance_info">
-                    <li class="nav-balance_info-money">R$ 0,00</li>
-                    <li class="nav-balance_info-items">0 itens</li>
-                </ul>
+                <a href="carrinho.html">
+                    <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
+                </a>
+                <ul class="nav-balance_info"></ul>
             </div>
             <a href="principal.html">
                 <img src="assets/images/logo.png" width="220" height="55" alt="logo">
@@ -35,15 +34,15 @@
     </nav>
 
     <main class="main">
-        <section class="search-results">
-            <h2>Resultados da Pesquisa</h2>
-            <div id="results-container" class="results-container">
-                
+        <section class="cart-items">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-container" class="cart-container">
+                <!-- Itens do carrinho serão exibidos aqui -->
             </div>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="carrinho.js"></script>
 </body>
 
 </html>
