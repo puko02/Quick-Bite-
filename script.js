@@ -25,11 +25,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
 const items = [
     { id: 1, name: 'Pizza Margherita', description: 'Pizza clássica com tomates e mussarela', image: 'assets/images/pizza_margherita.jpg' },
     { id: 2, name: 'Pizza Pepperoni', description: 'Pepperoni picante com queijo', image: 'assets/images/pizza_pepperoni.jpg' },
     { id: 3, name: 'Pizza Vegetariana', description: 'Carregada com vegetais', image: 'assets/images/pizza_vegetariana.jpg' },
-    // Adicione mais itens conforme necessário
+    { id: 4, name: 'Cheeseburger', description: 'Hambúrguer suculento com queijo', image: 'assets/images/cheeseburger.jpg' },
+    { id: 5, name: 'Hambúrguer Vegetariano', description: 'Delicioso hambúrguer vegetariano', image: 'assets/images/hamburguer_vegetariano.jpg' },
+    { id: 6, name: 'Philly Cheesesteak', description: 'Bife com queijo e cebolas', image: 'assets/images/philly_cheesesteak.jpg' },
+    { id: 7, name: 'Presunto e Queijo', description: 'Presunto e queijo na baguete', image: 'assets/images/presunto_queijo.jpg' },
+    { id: 8, name: 'Queijo Grelhado', description: 'Queijo derretido no pão torrado', image: 'assets/images/queijo_grelhado.jpg' },
+    { id: 9, name: 'Sanduíche BLT', description: 'Bacon, alface e tomate', image: 'assets/images/sanduiche_blt.jpg' },
+    { id: 10, name: 'Sanduíche Club', description: 'Sanduíche triplo com peru, bacon e alface', image: 'assets/images/sanduiche_club.jpg' },
+    { id: 11, name: 'Sanduíche de Carne de Porco Desfiada', description: 'Sanduíche de carne de porco desfiada com molho BBQ', image: 'assets/images/sanduiche_carne_porco_desfiada.jpg' },
+    { id: 12, name: 'Sanduíche de Frango', description: 'Sanduíche de frango grelhado com alface e tomate', image: 'assets/images/sanduiche_frango.jpg' },
+    { id: 13, name: 'Sanduíche de Peru', description: 'Sanduíche de peru com molho de cranberry', image: 'assets/images/sanduiche_peru.jpg' },
+    { id: 14, name: 'Sanduíche de Salada de Atum', description: 'Sanduíche de salada de atum com alface', image: 'assets/images/sanduiche_salada_atum.jpg' },
+    { id: 15, name: 'Sub de Almôndegas', description: 'Almôndegas com molho marinara', image: 'assets/images/sub_almondegas.jpg' },
+    { id: 16, name: 'Tacos de Carne', description: 'Tacos de carne moída com alface e queijo', image: 'assets/images/tacos_carne.jpg' },
+    { id: 17, name: 'Tacos de Frango', description: 'Tacos de frango com salsa e queijo', image: 'assets/images/tacos_frango.jpg' },
+    { id: 18, name: '345739 366', description: 'Easter Egg', image: 'assets/images/demoImg.jpeg' },
+
 ];
 
 function searchItems(query) {
@@ -39,7 +55,7 @@ function searchItems(query) {
     const filteredItems = items.filter(item => item.name.toLowerCase().includes(query.toLowerCase()));
 
     if (filteredItems.length === 0) {
-        resultsContainer.innerHTML = '<p>No results found</p>';
+        resultsContainer.innerHTML = '<p>Resultado não Encontrado</p>';
         return;
     }
 

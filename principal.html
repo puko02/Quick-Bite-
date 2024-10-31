@@ -14,399 +14,118 @@
         <div style="width: 675px; margin-right: 10px;" class="flex-box">
             <div style="position: relative">
                 <form id="search-form" action="pesquisa.html" method="GET">
-                    <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input">
+                    <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input" required>
                     <img src="assets/icons/search.svg" class="nav-input_after" alt="search" onclick="document.getElementById('search-form').submit()">
                 </form>
             </div>
             <button class="nav-filter"><img src="assets/icons/filter.svg" alt="filter"></button>
         </div>
+        <div>
+            <a href="restaurantes.html" id="Restaurantes">Restaurantes</a>
+        </div>
         <div style="width: 540px" class="flex-box">
             <div class="nav-balance">
-                <a href="detalhes.html">
-                    <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
-                </a>
-                <ul class="nav-balance_info"></ul>
+               <a href="carrinho.html" id="carrinho">
+                <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
+                <ul class="nav-balance_info">
+                    <li class="nav-balance_info-money">R$ 0,00</li>
+                    <li class="nav-balance_info-items">0 itens</li>
                 </ul>
+            </a>
             </div>
+            <div class="logo">
             <a href="principal.html">
                 <img  src="assets/images/logo.png" width="220" height="55" alt="logo">
             </a>
+            </div>
         </div>
     </nav>
     <main class="main">
         <section class="main-firstSection">
             <article>
             <a href="pesquisa.html?query=hamburguer">
-                <img src="./assets/images-principal/hamburguis.jpg" id="firstSection-img" alt>
+                <img src="./assets/images-principal/hamburguis.jpg" id="firstSection-img" alt="hamburguer">
             </a>
             </article>
             <article>
             <a href="pesquisa.html?query=pizza">
-                <img src="./assets/images-principal/pizza.jpg" id="firstSection-img" alt>
+                <img src="./assets/images-principal/pizza.jpg" id="firstSection-img" alt="pizza">
             </a>
             </article>
             <article>
             <a href="pesquisa.html?query=bebidas">
-                <img src="./assets/images-principal/bebeidas.jpg" id="firstSection-img" alt>
+                <img src="./assets/images-principal/bebeidas.jpg" id="firstSection-img" alt="bebidas">
             </a>
             </article>
             <article>
             <a href="pesquisa.html?query=acai">
-                <img src="./assets/images-principal/acai.jpg" id="firstSection-img" alt>
+                <img src="./assets/images-principal/acai.jpg" id="firstSection-img" alt="acai">
             </a>
             </article>
-            <article class="acessorapido">
+            <article>
             <a href="pesquisa.html?query=espetinhos">
-            <img src="./assets/images-principal/espetinhos.jpg" id="firstSection-img" alt>
+            <img src="./assets/images-principal/espetinhos.jpg" id="firstSection-img" alt="espetinhos">
             </a>
             </article>
             <article>
             <a href="pesquisa.html?query=coxinha">
-                <img src="./assets/images-principal/coxinha.jpg" id="firstSection-img" alt>
+                <img src="./assets/images-principal/coxinha.jpg" id="firstSection-img" alt="coxinha">
             </a>
             
         </section>
-
-
 
         <h2 class="main-secondSection_h2">recomendações</h2>
         <section class="main-secondSection">
             <article>
                 <a href="#">
-                    <img src="./assets/images/demoImg.jpeg" alt>
+                    <img src="./assets/images-principal/hamburguis.jpg" alt="Lanches">
                 </a>
                 <span>Lanches</span>
             </article>
             <article>
                 <a href="#">
-                    <img src="./assets/images/demoImg.jpeg" alt>
+                    <img src="./assets/images-principal/acai.jpg" alt="Doces">
                 </a>
                 <span>Doces</span>
             </article>
             <article>
                 <a href="#">
-                    <img src="./assets/images/demoImg.jpeg" alt>
+                    <img src="./assets/images-principal/coxinha.jpg" alt="Salgados">
+                </a>
+                <span>Salgados</span>
+            </article>
+            <article>
+                <a href="pizzariadozeca.html">
+                    <img src="./assets/images-principal/pizza.jpg" alt="Pizzas">
+                </a>
+                <span>Pizzaria do Zeca</span>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./assets/images-principal/hamburguis.jpg" alt="Lanches">
+                </a>
+                <span>Lanches</span>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./assets/images-principal/acai.jpg" alt="Doces">
+                </a>
+                <span>Doces</span>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="./assets/images-principal/coxinha.jpg" alt="Salgados">
                 </a>
                 <span>Salgados</span>
             </article>
             <article>
                 <a href="#">
-                    <img src="./assets/images/demoImg.jpeg" alt>
+                    <img src="./assets/images-principal/pizza.jpg" alt="Pizzas">
                 </a>
                 <span>Pizzas</span>
             </article>
         </section>
-        <section class="main-thirdSection">
-            <article>
-                <div class="main-thirdSection_name">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M12 6C16.9706 6 21 5.32843 21 4.5C21 3.97993 19.412 3.52168 17 3.25259M12 3C7.02944 3 3 3.67157 3 4.5C3 5.08895 5.03656 5.59863 8 5.84408"
-                            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M20 8C20 8 17.2089 9 11.7241 9C6.23938 9 4 8 4 8" stroke="#1C274C" stroke-width="1.5"
-                            stroke-linecap="round" />
-                        <path d="M16 14C16 14 14.7424 14.5 12 14.5C9.25762 14.5 8 14 8 14" stroke="#1C274C"
-                            stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M13 17C11.6484 17 10.6575 16.8786 10 16.7554M16 16.5C15.6982 16.6031 15.3714 16.7045 15 16.7887"
-                            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        <path
-                            d="M11.7188 19.4609C12.103 19.4853 12.5297 19.5 13.0002 19.5C13.5738 19.5 14.0662 19.456 14.5002 19.3857"
-                            stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M18 11C18 11 17.4848 12 12 12M6 11C6 11 6.21904 11.4251 7.8918 11.721" stroke="#1C274C"
-                            stroke-width="1.5" stroke-linecap="round" />
-                        <path d="M13 22C13 22 13.3047 22 13.5 22" stroke="#1C274C" stroke-width="1.5"
-                            stroke-linecap="round" />
-                    </svg>
-                    <h2>
-                        Toninho Tornado Lanches
-                    </h2>
-                </div>
-
-
-                <div class="main-thirdSection_content">
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                X-Egg
-                            </span>
-                            <span>
-                                R$16,99
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                X-Bacon
-                            </span>
-                            <span>
-                                R$18,99
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article>
-                <div class="main-thirdSection_name">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
-                        width="32px" height="32px" viewBox="0 0 50 50">
-                        <path
-                            d="M35.777344 19.71875L30.28125 14.222656C29.910156 13.847656 29.3125 13.828125 28.914063 14.175781L5.148438 35.050781C4.855469 35.308594 4.738281 35.71875 4.851563 36.089844 4.882813 36.195313 5.644531 38.652344 8.496094 41.503906 11.347656 44.355469 13.804688 45.117188 13.90625 45.148438 14.003906 45.179688 14.101563 45.191406 14.195313 45.191406 14.480469 45.191406 14.753906 45.070313 14.945313 44.851563L35.824219 21.085938C36.171875 20.6875 36.152344 20.089844 35.777344 19.71875zM26.828125 13.347656L4.929688 32.582031C1.863281 28.121094 1.066406 25.09375 1.03125 24.945313.925781 24.523438 1.101563 24.085938 1.46875 23.855469L22.867188 10.484375C23.265625 10.238281 23.777344 10.296875 24.105469 10.625zM39.375 25.894531L36.652344 23.171875 17.417969 45.070313C21.875 48.136719 24.90625 48.933594 25.054688 48.96875 25.136719 48.988281 25.21875 49 25.296875 49 25.636719 49 25.960938 48.828125 26.144531 48.53125L39.515625 27.128906C39.761719 26.734375 39.703125 26.222656 39.375 25.894531zM19.160156 7.929688L20.707031 9.476563 2.5 20.851563C1.125 15.980469 1.425781 12.664063 1.441406 12.503906 1.484375 12.082031 1.785156 11.730469 2.195313 11.632813L18.214844 7.667969C18.550781 7.582031 18.914063 7.683594 19.160156 7.929688zM42.070313 30.839844L40.519531 29.289063 29.152344 47.488281C32.460938 48.421875 35.066406 48.597656 36.429688 48.597656 37.074219 48.597656 37.445313 48.5625 37.496094 48.558594 37.917969 48.515625 38.265625 48.214844 38.367188 47.804688L42.332031 31.785156C42.417969 31.445313 42.316406 31.089844 42.070313 30.839844zM15.992188 6.15625L4.113281 9.097656C4.242188 5.601563 4.964844 0 9.074219 0 10.777344 0 12.757813 2.117188 15.992188 6.15625zM44.101563 32.972656L40.921875 45.808594C46.636719 45.21875 50 42.03125 50 38.925781 50 37.132813 47.800781 35.460938 44.101563 32.972656z" />
-                    </svg>
-                    <h2>
-                        Salgados do Loremzo
-                    </h2>
-                </div>
-
-                <div class="main-thirdSection_content">
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Coxinha
-                            </span>
-                            <span>
-                                R$8,99
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Risole
-                            </span>
-                            <span>
-                                R$9,99
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-
-            <article>
-                <div class="main-thirdSection_name">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 512 512">
-                        <path fill="#000000"
-                            d="M133.2 25l-53.69 94H432.5l-53.7-94H133.2zM25 137v46h462v-46H25zm32 64v46h46v-46H57zm352 0v46h46v-46h-46zm-171.4.6s-22 8.8-24 18.8c-4.6 22.8 33.9 60.8 33.9 60.8s-13.3-34.6-14.3-52.8c-.5-9.1 4.4-26.8 4.4-26.8zm54.4 14.8c-6.1 40.2-11.2 83.7-45.9 100.2-30.3 14.4-36.4-78.5-94.1-91.5 44.9 101.1-68.9 139.9 42.2 185.2h19.5c-24-25.9-34.4-90.8-34.4-90.8s30.2 72 62.5 74.2c15 1 33.5-30.2 33.5-30.2s5.9 29.8-.1 46.8H319c27.3-14.8 44.6-35.7 51.2-57.3 6.5-20.9 3-42.5-10.9-59.9-8.6 51.8-21.4 62.8-55.1 74.1 36.6-44.7 20.2-119.2-12.2-150.8zM57 265v46h46v-46H57zm352 0v46h46v-46h-46zM57 329v78h46v-78H57zm352 0v78h46v-78h-46zM25 425v62h462v-62H25z" />
-                    </svg>
-                    <h2>
-                        Pizzas do Jose
-                    </h2>
-                </div>
-
-                <div class="main-thirdSection_content">
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Pizza grande
-                            </span>
-                            <span>
-                                R$69,99
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Pizza media
-                            </span>
-                            <span>
-                                R$49,99
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article>
-                <div class="main-thirdSection_name">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
-                        width="32px" height="32px" viewBox="-4.64 0 122.88 122.88" version="1.1" id="Layer_1"
-                        style="enable-background:new 0 0 113.6 122.88" xml:space="preserve">
-                        <g>
-                            <path class="st0"
-                                d="M0.76,73.63l-0.05-0.02c0.03-0.03,0.06-0.06,0.08-0.08c0.14-0.41,0.41-0.75,0.75-0.99l56.28-48.89 c0.24-0.59,0.53-1.18,0.86-1.75c2.19-3.8,5.86-6.22,9.86-6.96c-2.4-4.22-5.73-7.77-9.61-9.84l0,0l-0.16-0.08 c-1.3-0.68-1.81-2.29-1.12-3.6c0.68-1.3,2.29-1.81,3.6-1.12l0.17,0.09l0.01-0.01l0,0c1.15,0.59,2.26,1.29,3.32,2.08 c4.16,3.12,7.58,7.62,9.89,12.67c1.27,0.32,2.51,0.82,3.7,1.5c2.58,1.49,4.52,3.65,5.73,6.14l0,0.01l0.06,0.14l0,0 c0.93,2.04,1.38,4.27,1.3,6.52c8.46,4.32,15.36,10.75,20.69,19.01c0.2,0.2,0.37,0.45,0.47,0.74l0.01,0.02l0.06,0.09h-0.02 c4.89,10.76,7.03,21.15,6.94,31.22c-0.08,10.16-2.43,19.97-6.49,29.52c-0.29,0.68-0.92,1.12-1.61,1.19l0,0L2.2,122.87 c-1.09,0.12-2.07-0.67-2.19-1.76c0-0.07-0.01-0.14-0.01-0.21l0,0c0-27.1,0.32-33.94,0.68-46.79C0.68,73.96,0.71,73.79,0.76,73.63 L0.76,73.63L0.76,73.63z M62.26,23.3l-0.01,0.01l-0.01,0.02l-0.01,0.01l0,0l-0.01,0.01l-0.01,0.02l-0.01,0.01l-0.01,0.02 l-0.01,0.01l-0.01,0.02l-0.01,0.02l-0.01,0.01l-0.01,0.02l-0.01,0.01l0,0l-0.01,0.01l-0.01,0.02l-0.01,0.02l-0.01,0.01l-0.01,0.02 l-0.01,0.02l-0.01,0.02l-0.01,0.01l-0.01,0.02l0,0.01l-0.01,0.01l-0.01,0.02l-0.01,0.02l-0.01,0.02l-0.01,0.01L62,23.71l-0.01,0.02 l-0.01,0.02l-0.01,0.02l-0.01,0.02l-0.04,0.06l-0.02,0.04l-0.01,0.02l-0.03,0.06l-0.01,0.02l-0.02,0.04l-0.03,0.06l0,0l-0.03,0.06 l-0.02,0.05l-0.01,0.01l-0.03,0.06l-0.01,0.03l-0.02,0.03l-0.03,0.06l0,0.01l-0.03,0.05l-0.03,0.05l0,0.01l-0.03,0.06l-0.02,0.03 l-0.01,0.03l-0.03,0.06l-0.01,0.02l-0.02,0.05l-0.07,0.17l-0.01,0.02l-0.03,0.06l-0.01,0.02l-0.02,0.04l-0.03,0.06v0l-0.02,0.06 l-0.02,0.04l-0.01,0.02l-0.02,0.06l-0.01,0.03l-0.04,0.1l0,0.01l-0.02,0.06l-0.04,0.13l-0.01,0.03l-0.01,0.03l-0.02,0.06l0,0.01 l-0.02,0.05l-0.02,0.06l0,0.01L61,25.98l-0.01,0.04l-0.01,0.03l-0.02,0.06l0,0.02l-0.01,0.05l-0.02,0.06l0,0l-0.02,0.06l-0.01,0.04 l-0.02,0.09l0,0.02l-0.01,0.04l-0.02,0.06v0l-0.02,0.06l-0.01,0.05l0,0.02l-0.01,0.06l-0.01,0.03l-0.01,0.04l-0.01,0.06l0,0.01 l-0.01,0.06L60.74,27l0,0.01l-0.01,0.06l-0.01,0.03l-0.01,0.03l-0.01,0.06l0,0.01l-0.01,0.05l-0.01,0.06l0,0.01l-0.01,0.06l0,0.04 l0,0.03l-0.01,0.06l0,0.02l-0.01,0.05l-0.01,0.06v0l-0.01,0.07l0,0.04l0,0.02l-0.01,0.07c-0.11,0.97-0.09,1.95,0.07,2.9l0,0 c0.53,2.97,2.31,5.69,5.13,7.32c5.06,2.92,11.52,1.19,14.44-3.87c0.23-0.4,0.43-0.81,0.61-1.22l0.03-0.08l0.01-0.02l0.02-0.06 l0.03-0.08l0.01-0.01l0.03-0.07l0.03-0.08h0l0.03-0.08l0.03-0.07l0-0.01l0.03-0.08l0.02-0.06l0.01-0.02l0.03-0.08l0.02-0.05 l0.01-0.04l0.03-0.08l0.01-0.04l0.01-0.05l0.03-0.08l0.01-0.02l0.02-0.06l0.02-0.08l0-0.01l0.02-0.07l0.02-0.08v0l0.02-0.08 l0.02-0.07l0-0.01l0.02-0.08l0.01-0.06l0-0.02l0.02-0.08l0.01-0.05l0.01-0.04l0.02-0.08l0.01-0.03l0.01-0.05l0.02-0.08l0-0.02 l0.01-0.06l0.01-0.08l0-0.01l0.01-0.07l0.01-0.08v0l0.01-0.08l0.01-0.07l0-0.01l0.01-0.08l0.01-0.06l0-0.03l0.01-0.08l0-0.04 l0-0.04l0.01-0.08l0-0.03l0-0.05l0.01-0.08l0-0.02l0-0.06l0-0.08V29.5l0-0.08l0-0.08v0l0-0.08l0-0.07v-0.02l0-0.08l0-0.06v-0.03 v-0.08v-0.04v-0.04l0-0.08l0-0.03l0-0.14l0-0.02l0-0.06l0-0.08v-0.01l0-0.08l-0.01-0.08v0l-0.01-0.08l0-0.07l0-0.02l-0.01-0.08 l-0.01-0.06l0-0.03l-0.01-0.08l0-0.04l0-0.04l-0.01-0.08c-0.13-1.09-0.43-2.15-0.89-3.15l0,0l-0.05-0.1l0,0 c-0.9-1.83-2.32-3.43-4.22-4.52l-0.09-0.05l-0.09-0.05l-0.06-0.03l-0.04-0.02l-0.09-0.05l-0.09-0.05l-0.02-0.01l-0.07-0.04 l-0.09-0.04l-0.08-0.04l-0.01-0.01l-0.19-0.09l-0.05-0.02l-0.05-0.02l-0.09-0.04l-0.09-0.04l-0.01,0l-0.08-0.03l-0.09-0.04 l-0.07-0.03l-0.03-0.01l-0.1-0.04l-0.09-0.04l-0.03-0.01l-0.06-0.02l-0.1-0.03l-0.09-0.03l0,0l-0.1-0.03l-0.1-0.03l-0.06-0.02 l-0.04-0.01l-0.1-0.03L74,18.87l-0.02-0.01l-0.08-0.02l-0.1-0.03l-0.08-0.02l-0.02,0l-0.1-0.02l-0.1-0.02l-0.04-0.01l-0.05-0.01 l-0.1-0.02l-0.1-0.02l-0.01,0l-0.09-0.02l-0.1-0.02l-0.07-0.01l-0.03,0l-0.1-0.02l-0.1-0.02l-0.03,0l-0.17-0.02l-0.09-0.01l-0.01,0 l-0.1-0.01l-0.1-0.01l-0.06,0l-0.04,0l-0.1-0.01l-0.1-0.01l-0.02,0l-0.08-0.01l-0.18-0.01l-0.02,0l-0.1,0l-0.1,0l-0.04,0l-0.06,0 l-0.1,0h-0.1h0h-0.09l-0.1,0l-0.07,0h-0.03l-0.1,0l-0.1,0l-0.03,0l-0.07,0l-0.1,0.01L70.4,18.5h-0.01l-0.1,0.01 C67.12,18.77,64.11,20.45,62.26,23.3L62.26,23.3z M56.88,30.98L9.13,70.89l91.19-22.81c-4.56-4.35-10.06-9.2-16.2-13.12 c-0.18,0.39-0.38,0.77-0.59,1.14c-3.97,6.87-12.75,9.23-19.62,5.26c-3.83-2.21-6.25-5.91-6.97-9.94l0,0L56.88,30.98L56.88,30.98z M76.8,33.84c0.4-0.27,0.5-0.81,0.24-1.21c-0.26-0.4-0.81-0.51-1.2-0.24c-0.99,0.66-2.01,1.16-3.05,1.49 c-1.04,0.33-2.11,0.51-3.22,0.54c-0.48,0.01-0.86,0.4-0.85,0.88c0.01,0.48,0.4,0.86,0.88,0.85c1.27-0.03,2.51-0.23,3.71-0.62 C74.51,35.15,75.68,34.58,76.8,33.84L76.8,33.84L76.8,33.84L76.8,33.84z M4.88,84.32c0.7,0.35,1.4,0.73,2.09,1.1l0.02,0.01 c9.24,5.01,13.89,0.51,18.71-4.14c5.38-5.2,10.96-10.6,22.94-4.1c2.12,1.15,4.23,2.29,6.64,2.33c2.41,0.04,5.19-1,8.72-4.2 l0.26-0.31c10.29-10.49,16.1-7.34,22.02-4.14c9.25,5.02,13.9,0.52,18.71-4.14c0.76-0.74,1.53-1.48,2.31-2.19 c-0.97-3.97-2.33-8-4.11-12.09C45.4,66.22,62.4,62.18,5.03,75.84C5,76.65,4.95,79.92,4.88,84.32L4.88,84.32z M108.29,69.44 c-0.4,0.38-0.79,0.76-1.19,1.15c-5.38,5.2-10.96,10.6-22.94,4.1c-2.12-1.15-4.23-2.29-6.64-2.33c-2.41-0.04-5.19,1-8.71,4.19 l-0.27,0.32c-10.29,10.48-16.1,7.34-22.02,4.13l-0.02-0.01c-9.24-5-13.89-0.51-18.7,4.14c-5.38,5.21-10.96,10.6-22.95,4.1 L4.8,89.19L4.59,103.4c1.16,0.51,2.28,1.12,3.4,1.73l0.02,0.01c9.25,5.02,13.9,0.52,18.71-4.14c5.38-5.2,10.96-10.6,22.94-4.1 c2.12,1.15,4.23,2.29,6.65,2.33c2.41,0.04,5.19-1,8.72-4.2l0.25-0.29c10.3-10.5,16.11-7.35,22.03-4.14 c9.25,5.01,13.9,0.52,18.71-4.14c1-0.97,2.01-1.94,3.05-2.83c0.06-1.02,0.09-2.05,0.1-3.08C109.2,76.89,108.92,73.19,108.29,69.44 L108.29,69.44z M108.39,90.07l-0.24,0.23c-5.38,5.2-10.96,10.6-22.94,4.1c-2.12-1.15-4.23-2.29-6.64-2.33 c-2.41-0.04-5.19,1-8.72,4.2l-0.26,0.31c-10.29,10.49-16.1,7.34-22.01,4.14c-9.26-5.02-13.91-0.52-18.72,4.13 c-5.38,5.2-10.96,10.6-22.95,4.1l-0.02-0.01c-0.45-0.25-0.91-0.49-1.37-0.73c-0.06,4.89-0.11,8.78-0.11,10.19l99.07-11.14 C105.8,101.61,107.47,95.89,108.39,90.07L108.39,90.07z" />
-                        </g>
-                    </svg>
-                    <h2>
-                        Doceria do Fernando
-                    </h2>
-                </div>
-                <div class="main-thirdSection_content">
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Bolo
-                            </span>
-                            <span>
-                                R$24,99
-                            </span>
-                        </div>
-                    </div>
-
-
-                    <div>
-                        <a href="#">
-                            <img src="./assets/images/demoImg.jpeg" alt>
-                        </a>
-                        <div class="main-thirdSection_content-text">
-                            <span>
-                                Brigadeiro
-                            </span>
-                            <span>
-                                R$1,99
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section class="main-fourthSection">
-            <article>
-                <img src="./assets/images/demoImg.jpeg" alt>
-                <div class="main-fourthSection_info">
-                    <h2>
-                        pizzaria do zeca
-                    </h2>
-                    <div>
-
-                        <p>
-                            Centro, Avenida Zecariana, 6969
-                        </p>
-                        <p>
-                            Atendimento das 17h ate as 23h30
-                        </p>
-                    </div>
-                </div>
-            </article>
-            <article>
-
-                <div>
-                    <h3>
-                        Pizzas
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <a>
-                                <img src="./assets/images/demoImg.jpeg" alt>
-                                <div class="main-fourthSection_listDescription">
-                                    <div>
-                                        <h4>
-                                            Pizza grande
-                                        </h4>
-                                        <span>
-                                            R$65,00
-                                        </span>
-                                    </div>
-                                    <p>
-                                        massa de pizza, molho de tomate, queijo mussarela, 12 pedaços
-                                    </p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./assets/images/demoImg.jpeg" alt>
-                                <div class="main-fourthSection_listDescription">
-                                    <div>
-                                        <h4>
-                                            Pizza media
-                                        </h4>
-                                        <span>
-                                            R$50,00
-                                        </span>
-                                    </div>
-                                    <p>
-                                        massa de pizza, molho de tomate, queijo mussarela, 12 pedaços
-                                    </p>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div>
-                    <h3>
-                        Lanches
-                    </h3>
-
-                    <ul>
-                        <li>
-                            <a>
-                                <img src="./assets/images/demoImg.jpeg" alt>
-                                <div class="main-fourthSection_listDescription">
-                                    <div>
-                                        <h4>
-                                            X-Salada
-                                        </h4>
-                                        <span>
-                                            R$10,00
-                                        </span>
-                                    </div>
-                                    <p>
-                                        pão brioche, carne bovina, alface, tomate, queijo, cebola, picles
-                                    </p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                                <img src="./assets/images/demoImg.jpeg" alt>
-                                <div class="main-fourthSection_listDescription">
-                                    <div>
-                                        <h4>
-                                            X-Egg
-                                        </h4>
-                                        <span>
-                                            R$12,00
-                                        </span>
-                                    </div>
-                                    <p>
-                                        pão brioche, carne bovina, alface, tomate, queijo, cebola, picles
-                                    </p>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </section>
+    
     </main>
 
     <script src="./script.js"></script>

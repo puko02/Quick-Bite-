@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${item.image}" alt="${item.name}">
             <h3>${item.name}</h3>
             <p>${item.description}</p>
-            <button class="remove-from-cart" data-id="${item.id}">Remover</button>
+            <button class="remover-do-carrinho" data-id="${item.id}">Remover</button>
         `;
         cartContainer.appendChild(itemElement);
     });
 
-    document.querySelectorAll('.remove-from-cart').forEach(button => {
+    document.querySelectorAll('.remover-do-carrinho').forEach(button => {
         button.addEventListener('click', (event) => {
             const itemId = event.target.getAttribute('data-id');
             removeFromCart(itemId);
@@ -32,4 +32,5 @@ function removeFromCart(itemId) {
     cart = cart.filter(item => item.id != itemId);
     localStorage.setItem('cart', JSON.stringify(cart));
     window.location.reload();
+    alert('Produto removido do carrinho!');
 }
