@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="png" href="./assets/icons/icon.png">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="icon" type="png" href="/assets/icons/icon.png">
     <title>Quick Bite</title>
 </head>
 
@@ -13,20 +13,20 @@
     <nav class="nav">
         <div style="width: 675px; margin-right: 10px;" class="flex-box">
             <div style="position: relative">
-                <form id="search-form" action="pesquisa.html" method="GET">
+                <form id="search-form" action="/HTML/pesquisa.html" method="GET">
                     <input class="nav-input" name="query" placeholder="Pesquisar..." id="search-input" required>
-                    <img src="assets/icons/search.svg" class="nav-input_after" alt="search" onclick="document.getElementById('search-form').submit()">
+                    <img src="../assets/icons/search.svg" class="nav-input_after" alt="search" onclick="document.getElementById('search-form').submit()">
                 </form>
             </div>
-            <button class="nav-filter"><img src="assets/icons/filter.svg" alt="filter"></button>
+            <button class="nav-filter"><img src="../assets/icons/filter.svg" alt="filter"></button>
         </div>
         <div>
-            <a href="restaurantes.html" id="Restaurantes">Restaurantes</a>
+            <a href="../HTML/restaurantes.html" id="Restaurantes">Restaurantes</a>
         </div>
         <div style="width: 540px" class="flex-box">
             <div class="nav-balance">
-               <a href="carrinho.html" id="carrinho">
-                <img class="nav-balance_cart" src="assets/icons/cart.svg" alt="cart">
+               <a href="../HTML/carrinho.html" id="carrinho">
+                <img class="nav-balance_cart" src="../assets/icons/cart.svg" alt="cart">
                 <ul class="nav-balance_info">
                     <li class="nav-balance_info-money">R$ 0,00</li>
                     <li class="nav-balance_info-items">0 itens</li>
@@ -34,8 +34,8 @@
             </a>
             </div>
             <div class="logo">
-            <a href="principal.html">
-                <img  src="assets/images/logo.png" width="220" height="55" alt="logo">
+            <a href="/HTML/pesquisa.html">
+                <img  src="../assets/images/logo.png" width="220" height="55" alt="logo">
             </a>
             </div>
         </div>
@@ -43,32 +43,32 @@
     <main class="main">
         <section class="main-firstSection">
             <article>
-            <a href="pesquisa.html?query=hambúrguer">
+            <a href="/HTML/pesquisa.html?query=hambúrguer">
                 <img src="./assets/images-principal/hamburguis.jpg" id="firstSection-img" alt="hamburguer">
             </a>
             </article>
             <article>
-            <a href="pesquisa.html?query=pizza">
+            <a href="/HTML/pesquisa.html?query=pizza">
                 <img src="./assets/images-principal/pizza.jpg" id="firstSection-img" alt="pizza">
             </a>
             </article>
             <article>
-            <a href="pesquisa.html?query=bebidas">
+            <a href="/HTML/pesquisa.html?query=bebidas">
                 <img src="./assets/images-principal/bebeidas.jpg" id="firstSection-img" alt="bebidas">
             </a>
             </article>
             <article>
-            <a href="pesquisa.html?query=acai">
+            <a href="/HTML/pesquisa.html?query=acai">
                 <img src="./assets/images-principal/acai.jpg" id="firstSection-img" alt="acai">
             </a>
             </article>
             <article>
-            <a href="pesquisa.html?query=espetinhos">
+            <a href="/HTML/pesquisa.html?query=espetinhos">
             <img src="./assets/images-principal/espetinhos.jpg" id="firstSection-img" alt="espetinhos">
             </a>
             </article>
             <article>
-            <a href="pesquisa.html?query=coxinha">
+            <a href="/HTML/pesquisa.html?query=coxinha">
                 <img src="./assets/images-principal/coxinha.jpg" id="firstSection-img" alt="coxinha">
             </a>
             
@@ -95,7 +95,7 @@
                 <span>Salgados</span>
             </article>
             <article>
-                <a href="pizzariadozeca.html">
+                <a href="/HTML/pizzariadozeca.html">
                     <img src="./assets/images-principal/pizza.jpg" alt="Pizzas">
                 </a>
                 <span>Pizzaria do Zeca</span>
@@ -128,7 +128,7 @@
     
     </main>
 
-    <script src="./script.js"></script>
+    <script src="../JAVASCRIPT/script.js"></script>
 </body>
 
 </html>
